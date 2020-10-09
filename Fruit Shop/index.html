@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Food shop</title>
+  		<meta charset="utf-8">
+  		<link rel="stylesheet" href="style.css">
+  		<script src="https://kit.fontawesome.com/e82a016b0a.js" crossorigin="anonymous"></script>
+
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1>Food Shop</h1>
+			<button class="header-button" data-toggle="modal" data-target="#cart" id='show-card'>
+				Card <i class="fas fa-shopping-basket"></i>(<span id='total-count'>0</span>)
+			</button>
+			<button class="header-button" id="clear-card">Clear card</button>
+		</header>
+		<hr/>
+		<section class="fruits">
+			<h2>Fruits</h2>
+			<article class="fruits-item">
+				<img src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Orange"/>
+				<h3>Orange</h3>
+				<p>Price: &#36;10</p>
+				<button class="fruits-item-button">Add to card</button>
+			</article>
+			<article class="fruits-item">
+				<img src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="Banana"/>
+				<h3>Banana</h3>
+				<p>Price: &#36;5</p>
+				<button class="fruits-item-button">Add to card</button>
+			</article>
+			<article class="fruits-item">
+				<img src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Lemon"/>
+				<h3>Lemon</h3>
+				<p>Price: &#36;15</p>
+				<button class="fruits-item-button">Add to card</button>
+			</article>
+		</section>
+
+		<section class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-lg" role="document">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		            <span aria-hidden="true">&times;</span>
+		          </button>
+		        </div>
+		        <div class="modal-body">
+		          <table class="show-cart table" id = 'basket'>
+		            
+		          </table>
+		          <div>Total price: $<span id="total-cart"></span></div>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		          <button type="button" class="btn btn-primary">Order now</button>
+		        </div>
+		      </div>
+		    </div>
+		  </section> 
+		  <script src="js.js"></script>
+	</body>
+</html>

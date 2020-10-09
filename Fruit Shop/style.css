@@ -1,0 +1,66 @@
+
+body {
+  padding: 0 80px;
+  margin: 0;
+}
+
+header, section{
+	margin: 50px 0;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+h1{
+	flex: 100%;
+}
+
+.fruits-item-button, button{
+  background: #0062cc;
+  width: 40%;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #545b62;
+  cursor: pointer;
+}
+
+header button{
+	flex: 1;
+	justify-content: space-around;
+	margin: 10px;
+  border-radius: 5px;
+}
+
+.fruits{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h2{
+	flex: 100%;
+}
+
+.fruits-item{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    flex: 1;
+}
+
+.fruits-item img{
+	width: 200px;
+	height: 200px;
+}
+styles.css
+Відображається "styles.css".
